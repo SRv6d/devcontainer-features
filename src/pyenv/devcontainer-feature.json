@@ -1,0 +1,29 @@
+{
+    "name": "pyenv",
+    "id": "pyenv",
+    "version": "1.0.0",
+    "description": "pyenv lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "2.3.15"
+            ],
+            "default": "latest",
+            "description": "The pyenv version to install."
+        },
+        "install": {
+            "type": "string",
+            "proposals": [
+                "3.11",
+                "3.8, 3.9, 3.10, 3.11"
+            ],
+            "default": "None",
+            "description": "Install Python versions."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
