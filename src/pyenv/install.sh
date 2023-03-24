@@ -6,6 +6,11 @@ if ! type curl >/dev/null 2>&1; then
     apt-get update -y && apt-get -y install --no-install-recommends curl ca-certificates
 fi 
 
+# Make sure git is installed
+if ! type git --version >/dev/null 2>&1; then
+    apt-get update -y && apt-get -y install --no-install-recommends git
+fi 
+
 echo "Installing Pyenv"
 
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
