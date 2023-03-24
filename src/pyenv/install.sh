@@ -1,12 +1,10 @@
 #!/bin/sh
 set -e
 
-ensure_curl() {
-    # Make sure curl is installed
-    if ! type curl >/dev/null 2>&1; then
-        apt-get update -y && apt-get -y install --no-install-recommends curl ca-certificates
-    fi 
-}
+# Make sure curl is installed
+if ! type curl >/dev/null 2>&1; then
+    apt-get update -y && apt-get -y install --no-install-recommends curl ca-certificates
+fi 
 
 echo "Installing Pyenv"
 
