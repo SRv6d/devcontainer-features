@@ -1,0 +1,21 @@
+{
+  "name": "Cargo B(inary)Install (binstall)",
+  "id": "cargo-binstall",
+  "version": "0.0.1",
+  "description": "Install [cargo-binstall](https://github.com/cargo-bins/cargo-binstall).",
+  "options": {
+    "install": {
+      "type": "string",
+      "default": "",
+      "description": "Space separated list of Rust binaries to install, as you would normally pass to cargo install."
+    },
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "description": "The version of cargo-binstall to use."
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/rust:1": {}
+  }
+}
