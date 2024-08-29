@@ -1,0 +1,18 @@
+{
+  "version": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "cargo-binstall": {
+        "version": "v1.10.2"
+      }
+    }
+  },
+  "install": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "cargo-binstall": {
+        "install": "xh ripgrep"
+      }
+    }
+  }
+}
