@@ -1,0 +1,13 @@
+{
+  "name": "nickel",
+  "id": "nickel",
+  "version": "1.0.0",
+  "description": "Install [nickel](https://github.com/tweag/nickel) including the [language server](https://github.com/tweag/nickel/tree/master/lsp).",
+  "documentationURL": "https://github.com/SRv6d/devcontainer-features/tree/main/src/nickel",
+  "dependsOn": {
+    "ghcr.io/lee-orr/rusty-dev-containers/cargo-binstall:0": {
+      "packages": "nickel-lang-cli,nickel-lang-lsp"
+    }
+  },
+  "installsAfter": ["ghcr.io/devcontainers/features/common-utils"]
+}
